@@ -104,6 +104,7 @@ celerybeat.pid
 # Environments
 .env
 .venv
+.wenv
 env/
 venv/
 ENV/
@@ -127,3 +128,21 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+*.pyc
+
+#specials
+bash.txt
+dev_notes.txt
+
+.vscode/
+venv/
+__pycache__
+.DS_Store/
+migrations/
+postgres-data/
+.mypy_cache
+.pytest_cache
+api.log
+test.db
+creds.ini
+
