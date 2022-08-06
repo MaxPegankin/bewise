@@ -6,8 +6,11 @@ setup(
     include_package_data=True,
     install_requires=[
         'flask', 
+        'flask-bootstrap',
+        'flask-wtf',
         'Flask-SQLAlchemy',
         'psycopg2',
-        'python-dotenv'
+        'python-dotenv',
+        'requests'
     ],
 )

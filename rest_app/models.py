@@ -6,11 +6,13 @@ from rest_app.database import Base
 class Quiz(Base):
     __tablename__ = 'quiz'
     id = Column(Integer, primary_key=True)
-    question = Column(Text, unique=True)
+    question_id = Column(Integer, unique=True)
+    question = Column(Text)
     answer = Column(Text)
     creation_date = Column(Date)
 
-    def __init__(self, question=None, answer=None, creation_date=date.today()):
+    def __init__(self, question_id:int=None, question:str=None, answer:str=None, creation_date:date=date.today()):
+        self.question_id = question_id
         self.question = question
         self.answer = answer
         self.creation_date = creation_date

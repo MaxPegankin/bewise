@@ -6,8 +6,6 @@ db_user = os.environ.get("POSTGRES_USER")
 db_pass = os.environ.get("POSTGRES_PASSWORD")
 db_name = os.environ.get("POSTGRES_DB")
 
-print(f'postgresql://{db_user}:{db_pass}@localhost/{db_name}')
-
 #                       dialect+driver://username:password@host:port/database
 engine = create_engine(f'postgresql://{db_user}:{db_pass}@localhost/{db_name}')
 db_session = scoped_session(sessionmaker(autocommit=False,

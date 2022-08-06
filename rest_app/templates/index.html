@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+{% block title %}Question service{% endblock %}
+{% block page_content %}
+<div class="page-header">
+    <h1>Questions request form</h1>
+</div>
+
+{{ wtf.quick_form(form) }}
+
+{% if added_questions %}
+<h1>Questions added to DB:</h1>
+<ul>
+{% endif %}
+
+{% for question in added_questions %}
+    <li>{{ question}}</li>
+{% endfor %}
+
+{% if added_questions %}
+</ul>
+{% endif %}
+
+{% endblock %}
