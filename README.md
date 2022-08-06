@@ -24,8 +24,10 @@ App initialization sequence:
 6.  open flask adress in a browser (<a href=http://127.0.0.1:5000>http://127.0.0.1:5000</a>)
 7.  enter number of questions to add to DB (number from 1 to 100)
 8.  receive the result with questions added to DB 
-9.  (optional) open adminer to exemine the db http://127.0.0.1:8080/ (use credentials from your .env file)
+9.  (optional) open adminer to exemine the db http://127.0.0.1:8080/ (use credentials from your .env file, System:PostgreSQL, Server:database)
 
 Request example:
 ![image](https://user-images.githubusercontent.com/54612661/183261805-1fc1ae3a-8405-4e88-81a1-d5a990dca375.png)
 
+Adminer login example:
+  ![image](https://user-images.githubusercontent.com/54612661/183261958-4ea2e3a1-9920-4d99-a85b-db6ad4ebccaf.png)
